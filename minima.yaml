@@ -1,0 +1,35 @@
+product:
+  # TODO: Choose a product name, but can't be changed afterwards
+  name: Testus
+  # TODO: Choose a stage name, but can't be changed afterwards
+  stage: Testusterone
+ 
+toolset:
+  pagerduty:
+    # TODO: Choose a PagerDuty account name
+    account: sirius
+    business_service:
+    description: This is just a Test for MINIMA
+      # TODO: Choose a PagerDuty business service name
+      name: MinimaBuisnessTest01
+      technical_services:
+        # TODO: Choose a PagerDuty service name
+        - name: MinimaTest01
+          alert_creation: create_alerts_and_incidents
+          escalation_policy:
+            # TODO: Choose a PagerDuty escalation policy name for the service
+            name: Remote Pre-Climatisation MOD4-ep
+      team:
+        # TODO: Choose a PagerDuty team name
+        name: MinimaTestTeam01
+        users:
+          # TODO: Choose PagerDuty users by email that should get assigned to the team
+          - email: lucas.hoffer@project-engineers.de
+            role: manager
+          - email: tobias.paetau@project-engineers.de
+            role: observer
+        support_hours:
+            time_zone: America/Lima
+            start_time: 09:00:00
+            end_time: 18:00:00
+            days_of_week: [ 1, 2, 3, 4, 5 ]
